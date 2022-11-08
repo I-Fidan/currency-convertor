@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <button class="bank_btn">
+            <img src="/img/bank.svg" alt="bank_home">
+        </button>
+
+        <ul class="header_li">
+            <li>BANK</li>
+            <li>BIZNES</li>
+            <li>INVESTMENT</li>
+            <li>INSURANCE</li>
+            <li>MOBILE</li>
+            <li>TRIPS</li>
+            <li>ENTERTAINMENT</li>
+        </ul>
+
+        <div class="header-phone">
+            <div class="mobile-main">
+                <div class="mobile-content">
+                    <button class="mobile-logo">
+                        <img src="/img/bank.svg" alt="bank_home">
+                    </button>
+                    <div class="menu">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+                <button class="m-sign">SIGN IN</button>
+            </div>
+            <div class="menu_bar">
+            <ul class="mobile-list">
+                <li>BANK</li>
+                <li>BIZNES</li>
+                <li>INVESTMENT</li>
+                <li>INSURANCE</li>
+                <li>MOBILE</li>
+                <li>TRIPS</li>
+                <li>ENTERTAINMENT</li>
+            </ul>
+        </div>
+        </div>
+
+        <button class="signin">SIGN IN</button>
+
+    </header>
+
+    <main>
+        <div class="main_content_text"><h1>Currency converter online</h1></div>
+
+        <div class="left_right">
+
+            <div class="leftside">
+                <p class="left_p main_p ">I have </p>
+                <ul class="currencies">
+                    <li class="rub">
+                        <button class="currency_elements_left rub_btn active"> RUB </button>
+                    </li>
+                    <li class="usd">
+                        <button class="currency_elements_left"> USD </button>
+                    </li>
+                    <li class="eur">
+                        <button class="currency_elements_left"> EUR </button>
+                    </li>
+                    <li class="azn">
+                        <button class="currency_elements_left azn_btn"> AZN </button>
+                    </li>
+                </ul>
+
+                <div class="calculator_currency">
+                    <input class="input_currency inpLeft" value="1" type="text" maxlength="12" placeholder="Type Something">
+
+                    <p class="money-txt">1 RUB = 0.014764 USD</p>
+                </div>
+            </div>
+
+            <div class="rightside">
+                <p class="right_p main_p">I want to buy</p>
+                <ul class="currencies">
+                    <li class="rub">
+                        <button class="currency_elements_right rub_btn"> RUB </button>
+                    </li>
+                    <li class="usd">
+                        <button class="currency_elements_right active"> USD </button>
+                    </li>
+                    <li class="eur">
+                        <button class="currency_elements_right"> EUR </button>
+                    </li>
+                    <li class="azn">
+                        <button class="currency_elements_right azn_btn"> AZN </button>
+                    </li>
+                </ul>
+
+                <div class="calculator_currency">
+
+                    <input class="input_currency inpRight" value="0.0148" type="text" maxlength="12" placeholder="Type Something">
+
+                    <p class="money-txt">1 USD = 67.732322 RUB</p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </main>
+
+    </div>
+    <script src="./js/imask.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>

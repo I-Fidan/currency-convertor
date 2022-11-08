@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width:769px) {
+    .header-phone{
+        display: none;
+    }
+    body {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        background: #F5F5F6;
+        display: flex;
+        flex-direction: row;
+        height: 6vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .bank_btn {
+        border: none;
+        background: none;
+        margin-right: 7.826vw;
+    }
+
+    header .bank_btn:hover {
+        cursor: pointer;
+    }
+
+    header .signin {
+        background: #FFFFFF;
+        border-radius: 0.347vw;
+        font-size: 1.3vw;
+        /* line-height: 1.13vw; */
+        height: 4.347vw;
+        font-weight: 600;
+        padding-left: 1.3vw;
+        padding-right: 1.3vw;
+        border: none;
+
+    }
+
+    header .signin:hover {
+        cursor: pointer;
+        background: #833AE0;
+        color: white;
+    }
+
+    header ul {
+        color: #959BA4;
+        display: flex;
+        flex-direction: row;
+        font-weight: 500;
+        font-size: 1.1vw;
+        list-style: none;
+        gap: 3.478vw;
+        margin-right: 9.56vw;
+    }
+
+    header li:hover {
+        color: black;
+        cursor: pointer;
+    }
+
+    main {
+        width: 66.08vw;
+        height: 21.39vw;
+        margin-top: 6.08vw;
+        display: flex !important;
+        justify-content: center;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+
+    }
+
+    main .left_right {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2.6vw;
+
+    }
+
+    main h1 {
+        font-size: 3.9vw;
+        font-weight: 700;
+    }
+
+    main .main_p {
+        font-weight: 400;
+        font-size: 1.4vw;
+        line-height: 1.2vw;
+        color: #9F9F9F;
+        margin-bottom: 1.13vw;
+    }
+
+    main .currencies {
+        display: flex;
+        list-style: none;
+    }
+
+    main .currency_elements_left {
+        border: 1.5px solid #E5E5E5;
+        background: none;
+        padding: 0.78vw 1.73vw 0.78vw 1.73vw;
+        width: 6.6vw;
+    }
+
+    main .currency_elements_right {
+        border: 1.5px solid #E5E5E5;
+        background: none;
+        padding: 0.78vw 1.73vw 0.78vw 1.73vw;
+        width: 6.6vw;
+    }
+
+    main .rub_btn {
+        border-top-left-radius: 0.6vw;
+        border-bottom-left-radius: 0.6vw;
+    }
+
+    main .azn_btn {
+        border-top-right-radius: 0.6vw;
+        border-bottom-right-radius: 0.6vw;
+    }
+
+    main .calculator_currency {
+        width: 26.08vw;
+        height: 10.434vw;
+        border: 2px solid #E5E5E5;
+        margin-top: 2.6vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 1vw;
+    }
+
+    main .input_currency {
+        font-size: 3.04vw;
+        width: 26.08vw;
+        height: 4.347vw;
+        border: none;
+        outline: none;
+        margin-top: 0.87vw;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    main button {
+        cursor: pointer;
+    }
+
+    main .active {
+        background-color: #833AE0;
+        color: white;
+        border: 1px solid #833AE0;
+    }
+
+    main .money-txt {
+        display: flex;
+        justify-self: start;
+        align-self: flex-start;
+        margin-left: 1.56vw;
+        color: #C6C6C6;
+        size: 1.217vw;
+    }
+
+    main .money {
+        align-self: flex-start;
+        margin-left: 1.56vw;
+        font-size: 3.04vw;
+        margin-top: 0.87vw;
+        /* font-weight: 700; */
+        width: 22.6vw;
+        overflow-wrap: break-word;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width: 768px) {
+
+    header .bank_btn {
+        border: none;
+        background: none;
+        margin-right: 2vw;
+        display: none;
+    }
+
+    header .bank_btn:hover {
+        cursor: pointer;
+    }
+
+    header .signin {
+        background: #FFFFFF;
+        border-radius: 0.347vw;
+        font-size: 3vw;
+        /* line-height: 1.13vw; */
+        height: 4.347vw;
+        font-weight: 600;
+        padding-left: 1.3vw;
+        padding-right: 1.3vw;
+        border: none;
+
+    }
+
+    .header-phone {
+        /* display: none; */
+        width: 100%;
+        height: 60px;
+        z-index: 10;
+        overflow: none;
+    }
+
+    .mobile-logo {
+        background: none;
+        border: none;
+        outline: none;
+
+    }
+
+    .header-phone .menu_bar {
+        z-index: 11;
+        position: absolute;
+        /* top: 15; */
+        left: 0;
+        /* height: 100vh; */
+        width: 100%;
+        background-color: white;
+        transition: .5s;
+        transform: translateX(-100%);
+    }
+
+    .header-phone .menu_bar.activeted {
+        left: 100%;
+    }
+
+    .mobile-list {
+        position: fixed;
+        right: 0;
+        list-style: none;
+        width: 100vw;
+        height: 110vh;
+        background: #833AE0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 300%;
+        /* font-size: 3vw; */
+        font-style: italic;
+    }
+
+    .mobile-content {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .menu i {
+        font-size: x-large;
+        color: #833AE0;
+    }
+
+    .mobile-main {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .m-sign {
+        font-size: 1rem;
+        font-weight: 700;
+        color: black;
+        cursor: pointer;
+        background:none;
+        border: none;
+        outline: none;
+        height: auto;
+        width: 22vw;
+        margin: 10px;
+    }
+    .m-sign:hover{
+        color: #833AE0;
+    }
+
+    .main_content_text{
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        text-align: center;
+    }
+    main .main_p {
+        font-weight: 400;
+        font-size: 3.4vw;
+        line-height: 1.2vw;
+        color: #9F9F9F;
+        margin-bottom: 2.13vw;
+        
+    }
+    main{
+        height: 100vh;
+    }
+
+    main .currencies {
+        display: flex;
+        list-style: none;
+    }
+
+    main .currency_elements_left {
+        border: 1.5px solid #E5E5E5;
+        background: none;
+        padding: 0.78vw 1.73vw 0.78vw 1.73vw;
+        width:13.3vw;
+    }
+
+    main .currency_elements_right {
+        border: 1.5px solid #E5E5E5;
+        background: none;
+        padding: 0.78vw 1.73vw 0.78vw 1.73vw;
+        width: 13.3vw;
+    
+    }
+
+    main .rub_btn {
+        border-top-left-radius: 0.6vw;
+        border-bottom-left-radius: 0.6vw;
+    }
+
+    main .azn_btn {
+        border-top-right-radius: 0.6vw;
+        border-bottom-right-radius: 0.6vw;
+    }
+
+    main .calculator_currency {
+        width: 48.08vw;
+        height: 25.434vw;
+        border: 2px solid #E5E5E5;
+        margin: 2.6vw 0;
+        display: flex;
+        flex-direction: column;
+        padding: 2vw;
+        justify-content: space-between;
+        border-radius: 1vw;
+    }
+
+    main .input_currency {
+        font-size: 5.04vw;
+        width: 35vw;
+        height: 4.347vw;
+        border: none;
+        outline: none;
+        margin-top: 0.87vw;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    main button {
+        cursor: pointer;
+    }
+
+    main .active {
+        background-color: #833AE0;
+        color: white;
+        border: 1px solid #833AE0;
+    }
+
+    main .money-txt {
+        display: flex;
+        justify-self: start;
+        align-self: flex-start;
+        margin-left: 1.56vw;
+        color: #C6C6C6;
+        font-size: 3.217vw;
+    }
+
+    main .money {
+        align-self: flex-start;
+        margin-left: 1.56vw;
+        font-size: 3.04vw;
+        margin-top: 0.87vw;
+        /* font-weight: 700; */
+        width: 22.6vw;
+        overflow-wrap: break-word;
+    }
+
+    body {
+        width: 20vw;
+    }
+
+    header .header_li {
+        display: none;
+    }
+
+    header {
+        width: 100vw;
+    }
+
+    .signin{
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        justify-content: space-around;
+        margin-top: 7.82vw;
+        width: 8.7vw;
+        height: 10vw;
+    }
+
+
+    main .left_right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    main .leftside {
+        margin-bottom: 6.08vw;
+    }
+
+    main .right {
+        width: 8.7vw;
+        margin-bottom: 8.7vw;
+    }
+
+
+}
